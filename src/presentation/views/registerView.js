@@ -16,7 +16,7 @@ export function showRegisterView(container, presenter) {
 
                 <header class="auth-header">
                     <h1>Crear cuenta</h1>
-                    <p>Regístrate para comenzar</p>
+                    <p>Regístrate para comenzar IE San Jeronimo</p>
                 </header>
 
                 <form id="register-form" class="auth-form">
@@ -108,7 +108,7 @@ export function showRegisterView(container, presenter) {
             email: formData.get("email"),
             password: formData.get("password")
         };
-
+        debugger;
         presenter.register(userData);
     });
 

@@ -11,10 +11,12 @@
 export class UserRepository {
 
     async save(user) {
+        debugger;
         throw new Error("Method not implemented");
     }
 
     async findByEmail(email) {
+        debugger;
         throw new Error("Method not implemented");
     }
 
