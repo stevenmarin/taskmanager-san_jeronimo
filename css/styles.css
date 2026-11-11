@@ -176,7 +176,7 @@ body {
     font-size: 14px;
 }
 
-.form-group input {
+.form-group input, select {
     width: 100%;
 
     padding: 12px;
@@ -194,6 +194,12 @@ body {
     border-color: var(--color-primary);
 }
 
+.form-group #check {
+    display: block;
+    width: auto;
+    margin: 8px 0 0 0;
+    align-self: flex-start;
+}
 
 /*
  * =========================================================

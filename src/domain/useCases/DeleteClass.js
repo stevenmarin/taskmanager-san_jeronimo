@@ -2,7 +2,7 @@
  * Delete Class Use Case
  *
  * Responsabilidad:
- * - Eliminar una clase.
+ * - Eliminar una cla
  */
 
 export class DeleteClass {

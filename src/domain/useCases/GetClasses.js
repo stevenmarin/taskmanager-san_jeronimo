@@ -2,7 +2,7 @@
  * Get Classes Use Case
  *
  * Responsabilidad:
- * - Obtener todas las clases.
+ * - Obtener todas las clases
  */
 
 export class GetClasses {
