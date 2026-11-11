@@ -69,7 +69,7 @@ export function showLoginView(container, presenter) {
                 <div class="auth-footer">
 
                     <p>
-                        ¿No tienes una cuenta?
+                        ¿No tienes una cuenta pues creela?
                     </p>
 
                     <button
