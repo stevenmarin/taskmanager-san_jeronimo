@@ -22,7 +22,7 @@ export function showRegisterView(container, presenter) {
                 <form id="register-form" class="auth-form">
 
                     <div class="form-group">
-                        <label for="register-tipoUsuario">
+                        <label for="register-institucion">
                             Institución Educativa
                         </label>
 
@@ -32,8 +32,8 @@ export function showRegisterView(container, presenter) {
                             name="institucion"
                             required>
                             <option value="">Selecciona tu institución educativa</option>
-                            <option value="profesor">IE San Jeronimo</option>
-                            <option value="estudiante">Otra</option>
+                            <option value="SanJeronimo">IE San Jeronimo</option>
+                            <option value="otro">Otra</option>
                         </select>
                     </div>
 
@@ -69,7 +69,7 @@ export function showRegisterView(container, presenter) {
                     </div>
 
                     <div class="form-group">
-                        <label for="register-tipoUsuario">
+                        <label for="register-genero">
                             Genero
                         </label>
 
@@ -79,8 +79,8 @@ export function showRegisterView(container, presenter) {
                             name="genero"
                             required>
                             <option value="">Selecciona tu genero</option>
-                            <option value="profesor">Hombre</option>
-                            <option value="estudiante">Mujer</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
                         </select>
                     </div>
 
@@ -158,13 +158,13 @@ export function showRegisterView(container, presenter) {
         const formData = new FormData(registerForm);
 
         const userData = {
-            name: formData.get("name"),
             institucion: formData.get("institucion"),
+            name: formData.get("name"),
             tipoUsuario: formData.get("tipoUsuario"),
             genero: formData.get("genero"),
             email: formData.get("email"),
-            check: formData.get("check"),
-            password: formData.get("password")
+            password: formData.get("password"),
+            check: formData.get("check")
         };
         debugger;
         presenter.register(userData);
